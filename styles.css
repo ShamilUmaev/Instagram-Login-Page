@@ -15,7 +15,7 @@ html {
 
 body {
     background-color: #f5f5f5;
-    padding: 1rem 0 4rem;
+    padding-bottom: 4rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -202,6 +202,10 @@ input[type="submit"] {
 }
 
 @media only screen and (min-width: 450px) {
+    body {
+        padding: 6rem 0 4rem;
+    }
+
     .login-container {
         border: 1px solid #d1d1d1;
     }
@@ -213,7 +217,7 @@ input[type="submit"] {
 
 @media only screen and (min-width: 876px) {
     body {
-        padding: 4rem 0;
+        padding: 6rem 0 4rem;
     }
 
     .page-container {
