@@ -26,6 +26,10 @@ a {
     color: #385185;
 }
 
+.outer-container {
+    width: 350px;
+}
+
 .login-container {
     width: 350px;
     height: 475px;
@@ -119,7 +123,6 @@ input[type="submit"] {
 }
 
 .registration-ctr {
-    width: 350px;
     height: 65px;
     border: 1px solid #d1d1d1;
     margin-top: 1rem;
@@ -134,4 +137,42 @@ input[type="submit"] {
 
 .registration-ctr a {
     color: rgb(0, 149, 246);
+}
+
+.get-app {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.get-app > p {
+    font-size: 1.4rem;
+}
+
+.get-app-links {
+    width: 78%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.get-app-links img {
+    width: 130px;
+}
+
+.desktop-only {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .page-container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .desktop-only {
+        display: block;
+        width: 470px;
+    }
 }
