@@ -6,7 +6,7 @@
 
 html, body {
     width: 100%;
-    min-height: 100%;
+    min-height: 100dvh;
 }
 
 html {
@@ -15,7 +15,6 @@ html {
 
 body {
     background-color: #f5f5f5;
-    padding-bottom: 4rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -24,9 +23,23 @@ a {
     color: #385185;
 }
 
-.outer-container {
+.page-container {
+    min-height: 100dvh;
+    min-width: 375px;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inner-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-outer-container {
     width: 350px;
-    margin: 0 auto;
 }
 
 .login-container {
@@ -158,7 +171,7 @@ input[type="submit"] {
 
 .footer {
     text-align: center;
-    width: 100%;
+    width: 95%;
     margin: 2rem auto 0;
 }
 
@@ -201,32 +214,9 @@ input[type="submit"] {
     display: none;
 }
 
-@media only screen and (min-width: 450px) {
-    body {
-        padding: 6rem 0 4rem;
-    }
-
-    .login-container {
-        border: 1px solid #d1d1d1;
-    }
-
-    .registration-ctr {
-        border: 1px solid #d1d1d1;
-    }
-}
-
-@media only screen and (min-width: 876px) {
-    body {
-        padding: 6rem 0 4rem;
-    }
-
-    .page-container {
-        width: 830px;
-        margin: 0 auto;
-        display: flex;
+@media only screen and (min-width: 992px) {
+    .inner-page-container {
         flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
     }
 
     .login-container {
@@ -242,6 +232,6 @@ input[type="submit"] {
     }
 
     .footer {
-        width: 90%;
+        max-width: 825px;
     }
 }
