@@ -27,6 +27,7 @@ a {
     min-height: 100dvh;
     min-width: 375px;
     max-width: 1920px;
+    padding: 3rem 0 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -215,6 +216,10 @@ input[type="submit"] {
 }
 
 @media only screen and (min-width: 992px) {
+    .page-container {
+        padding: 0;
+    }
+
     .inner-page-container {
         flex-direction: row-reverse;
     }
